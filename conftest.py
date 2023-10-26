@@ -15,13 +15,13 @@ def pytest_addoption(parser):
     parser.addoption(
         "--headless",
         action="store",
-        default="false",
+        default="true",
         help="Choose the mode: true or false",
         choices=("true", "false")
     )
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture(scope="session")
 def driver(request):
     driver_name = request.config.getoption("driver")
     headless = request.config.getoption("headless")
@@ -30,10 +30,12 @@ def driver(request):
         if headless == "true":
             opt.add_argument("--headless")
         driver = EventFiringWebDriver(webdriver.Chrome(options=opt), WebDriverListener())
-    else:
+    elif driver_name == "firefox":
         opt = webdriver.FirefoxOptions()
         if headless == "true":
             opt.add_argument("--headless")
         driver = EventFiringWebDriver(webdriver.Firefox(options=opt), WebDriverListener())
+    else:
+        raise Exception(f"{driver_name} is not supported!")
     yield driver
     driver.quit()
