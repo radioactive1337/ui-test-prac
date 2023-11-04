@@ -161,3 +161,4 @@ cython_debug/
 
 #my files
 rep/
+xmpl.py

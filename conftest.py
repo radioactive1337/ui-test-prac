@@ -21,7 +21,7 @@ def pytest_addoption(parser):
     )
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="class")
 def driver(request):
     driver_name = request.config.getoption("driver")
     headless = request.config.getoption("headless")

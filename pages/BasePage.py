@@ -57,6 +57,11 @@ class BasePage:
     def wait(self, time: float):
         sleep(time)
 
+    @allure.step("Implicit wait")
+    def wait_for(self, action):
+        wait = WebDriverWait(self.driver, 10)
+        action_waiting_for = wait.until(action)
+
     @allure.step("Click on the element")
     def click_element(self, locator):
         self.get_element(locator).click()
