@@ -1,4 +1,4 @@
-name: api tests
+name: ui tests
 
 on:
   workflow_dispatch
@@ -21,7 +21,7 @@ jobs:
       - name: Install requirements
         run: pip install -r requirements.txt
       - name: Run tests
-        run: pytest .\tests --alluredir=allure-results
+        run: pytest --alluredir=allure-results
       - name: Store allure results
         uses: actions/upload-artifact@v3
         with:
