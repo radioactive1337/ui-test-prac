@@ -1,5 +1,4 @@
 import allure
-
 from .BasePage import BasePage
 from locators.locators import BasicPageLocators
 

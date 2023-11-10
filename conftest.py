@@ -1,4 +1,5 @@
 import pytest
+import json
 from selenium import webdriver
 from tools.logger import WebDriverListener
 from selenium.webdriver.support.events import EventFiringWebDriver
@@ -39,3 +40,10 @@ def driver(request):
         raise Exception(f"{driver_name} is not supported!")
     yield driver
     driver.quit()
+
+
+@pytest.fixture
+def json_data_extract(file_path):
+    with open(file_path) as f:
+        data = json.load(f)
+    return data

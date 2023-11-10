@@ -23,3 +23,14 @@ class ExamplePageLocators:
     alert_button = (By.XPATH, "//button[@id='show-as-alert']")
     para_button = (By.XPATH, "//button[@data-locator='process-in-para']")
     link_button = (By.XPATH, "//a[@id='clickable-link']")
+
+
+class DynamicTablePageLocators:
+    table_caption = (By.XPATH, "//caption")
+    table = (By.XPATH, "//table")
+    table_rows = (By.XPATH, "//tr")
+    options = (By.XPATH, "//summary")
+    table_input = (By.XPATH, "//textarea[@id='jsondata']")
+    caption_input = (By.XPATH, "//input[@id='caption']")
+    table_id_input = (By.XPATH, "//input[@id='tableid']")
+    table_refresh = (By.XPATH, "//button[@id='refreshtable']")

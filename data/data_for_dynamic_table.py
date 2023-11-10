@@ -1,0 +1,110 @@
+data1 = ('[{\
+    "id": 1,\
+    "first_name": "Piotr",\
+    "ip_address": "121.206.214.148"\
+}, {\
+    "id": 2,\
+    "first_name": "Henriette",\
+    "ip_address": "116.16.176.86"\
+}, {\
+    "id": 3,\
+    "first_name": "Ewen",\
+    "ip_address": "251.231.193.115"\
+}, {\
+    "id": 4,\
+    "first_name": "Davidde",\
+    "ip_address": "51.58.155.244"\
+}, {\
+    "id": 5,\
+    "first_name": "Dareen",\
+    "ip_address": "27.216.185.234"\
+}, {\
+    "id": 6,\
+    "first_name": "Konstantin",\
+    "ip_address": "6.66.223.198"\
+}, {\
+    "id": 7,\
+    "first_name": "Odette",\
+    "ip_address": "2.199.119.138"\
+}, {\
+    "id": 8,\
+    "first_name": "Sibbie",\
+    "ip_address": "206.62.71.29"\
+}, {\
+    "id": 9,\
+    "first_name": "Ivette",\
+    "ip_address": "143.29.193.23"\
+}, {\
+    "id": 10,\
+    "first_name": "Donnamarie",\
+    "ip_address": "129.79.45.69"\
+}]', "DYNAMIC TABLE 1", "dt_id_1")
+
+data2 = ('[{\
+    "id": 1,\
+    "email": "bcubbin0@psu.edu"\
+}, {\
+    "id": 2,\
+    "email": "cglyssanne1@oaic.gov.au"\
+}, {\
+    "id": 3,\
+    "email": "edelayglesia2@mlb.com"\
+}, {\
+    "id": 4,\
+    "email": "gjablonski3@about.com"\
+}, {\
+    "id": 5,\
+    "email": "vkirkbride4@hatena.ne.jp"\
+}, {\
+    "id": 6,\
+    "email": "kzini5@oaic.gov.au"\
+}, {\
+    "id": 7,\
+    "email": "rhowieson6@geocities.com"\
+}, {\
+    "id": 8,\
+    "email": "ncoffey7@artisteer.com"\
+}, {\
+    "id": 9,\
+    "email": "hmelbourne8@nyu.edu"\
+}, {\
+    "id": 10,\
+    "email": "eduguid9@sciencedaily.com"\
+}]', "DYNAMIC TABLE 2", "dt_id_2")
+
+data3 = ('[{\
+  "id": 1,\
+  "first_name": "Dinny",\
+  "last_name": "Guillford",\
+  "email": "dguillford0@netlog.com",\
+  "gender": "Female",\
+  "ip_address": "193.84.29.100"\
+}, {\
+  "id": 2,\
+  "first_name": "Herb",\
+  "last_name": "Kenford",\
+  "email": "hkenford1@google.com.au",\
+  "gender": "Male",\
+  "ip_address": "52.29.134.138"\
+}, {\
+  "id": 3,\
+  "first_name": "Dmitri",\
+  "last_name": "Gaye",\
+  "email": "dgaye2@blogspot.com",\
+  "gender": "Male",\
+  "ip_address": "133.230.212.79"\
+}, {\
+  "id": 4,\
+  "first_name": "Oswell",\
+  "last_name": "Behagg",\
+  "email": "obehagg3@berkeley.edu",\
+  "gender": "Male",\
+  "ip_address": "96.244.176.53"\
+}, {\
+  "id": 5,\
+  "first_name": "Abigail",\
+  "last_name": "Blasing",\
+  "email": "ablasing4@fema.gov",\
+  "gender": "Female",\
+  "ip_address": "184.36.187.88"\
+}]', "DYNAMIC TABLE 3", "dt_id_3")

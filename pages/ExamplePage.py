@@ -1,8 +1,6 @@
 import allure
-
 from .BasePage import BasePage
 from locators.locators import ExamplePageLocators
-from selenium.webdriver.support import expected_conditions as EC
 
 
 class ExamplePage(BasePage):
