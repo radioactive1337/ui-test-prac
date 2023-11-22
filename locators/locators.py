@@ -34,3 +34,11 @@ class DynamicTablePageLocators:
     caption_input = (By.XPATH, "//input[@id='caption']")
     table_id_input = (By.XPATH, "//input[@id='tableid']")
     table_refresh = (By.XPATH, "//button[@id='refreshtable']")
+
+
+class JsAlertsPageLocators:
+    alert = (By.XPATH, "//input[@id='alertexamples']")
+    confirm = (By.XPATH, "//input[@id='confirmexample']")
+    confirm_out = (By.XPATH, "//p[@id='confirmreturn']")
+    prompt = (By.XPATH, "//input[@id='promptexample']")
+    prompt_out = (By.XPATH, "//p[@id='promptreturn']")

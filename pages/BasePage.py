@@ -46,28 +46,28 @@ class BasePage:
 
     @allure.step("Waiting for the page to load")
     def wait_for_page_to_load(self):
-        WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'body')))
+        return WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'body')))
 
     @allure.step("Close current window/tab")
     def close_current_window(self):
-        self.driver.close()
+        return self.driver.close()
 
     @allure.step("Explicit wait")
     def wait(self, time: float):
-        sleep(time)
+        return sleep(time)
 
     @allure.step("Implicit wait")
     def wait_for(self, action):
         wait = WebDriverWait(self.driver, 10)
-        action_waiting_for = wait.until(action)
+        return wait.until(action)
 
     @allure.step("Click on the element")
     def click_element(self, locator):
-        self.get_element(locator).click()
+        return self.get_element(locator).click()
 
     @allure.step("Clear")
     def clear_cookies(self):
-        self.driver.delete_all_cookies()
+        return self.driver.delete_all_cookies()
 
     @allure.step("Input text")
     def fill_input(self, locator, value):
@@ -115,4 +115,4 @@ class BasePage:
 
     @allure.step("Screenshot")
     def take_screenshot(self, file_name):
-        self.driver.save_screenshot(file_name)
+        return self.driver.save_screenshot(file_name)
