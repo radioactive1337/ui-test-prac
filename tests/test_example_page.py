@@ -20,14 +20,14 @@ class Test:
     def test_2(self, driver, input, output):
         page = ExamplePage(driver=driver, url=URL)
         page.open()
-        page.check_para_button(input_val=input, output_val=output)
+        page.check_para_button(input_val=input, exp_res=output)
 
     @pytest.mark.parametrize("input, output", [(321, "three, two, one"), (111, "one, one, one")])
     @allure.title("Example page buttons test - input: {input} output: {output}")
     def test_3(self, driver, input, output):
         page = ExamplePage(driver=driver, url=URL)
         page.open()
-        page.check_alert_button(input_val=input, output_val=output)
+        page.check_alert_button(input_val=input, exp_text=output)
 
     @pytest.mark.parametrize("input, output", [(1337, "one, three, three, seven"), (777, "seven, seven, seven")])
     @allure.title("Example page buttons test - input: {input} output: {output}")

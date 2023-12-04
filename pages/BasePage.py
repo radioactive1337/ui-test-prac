@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
+from enums.global_enums import ErrorEnums
 
 
 class BasePage:
@@ -24,12 +25,12 @@ class BasePage:
     @allure.step("Find element")
     def get_element(self, locator, time=5):
         return WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
-                                                      message=f"Can't find element by locator {locator}")
+                                                      message=f"{ErrorEnums.ELEMENT_NOT_FOUND.value}{locator}")
 
     @allure.step("Find elements")
     def get_elements(self, locator, time=5):
         return WebDriverWait(self.driver, time).until(EC.presence_of_all_elements_located(locator),
-                                                      message=f"Can't find elements by locator {locator}")
+                                                      message=f"{ErrorEnums.ELEMENT_NOT_FOUND.value}{locator}")
 
     @allure.step("Get element attribute")
     def get_element_attribute(self, locator, attr):

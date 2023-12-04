@@ -42,3 +42,4 @@ class JsAlertsPageLocators:
     confirm_out = (By.XPATH, "//p[@id='confirmreturn']")
     prompt = (By.XPATH, "//input[@id='promptexample']")
     prompt_out = (By.XPATH, "//p[@id='promptreturn']")
+

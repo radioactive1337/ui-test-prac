@@ -1,6 +1,8 @@
 import json
 
 import allure
+
+from enums.global_enums import ErrorEnums
 from .BasePage import BasePage
 from locators.locators import DynamicTablePageLocators
 
@@ -24,8 +26,11 @@ class DynamicTablePage(BasePage):
             act = actual_table_data[i].text
             exp = expected_table_data[i - 1]
             for key in keys:
-                assert (str(exp[f"{key}"]) in act), f"exp = {exp} act = {act}"
+                assert (str(exp[f"{key}"]) in act), \
+                    f"{ErrorEnums.TEXT_NOT_EQUAL.value} ({exp[{key}]} : {act})"
+
         assert (expected_caption in actual_caption), \
-            f"Expected result:{expected_caption} \t Actual result:{actual_caption}"
+            f"{ErrorEnums.TEXT_NOT_EQUAL.value} ({expected_caption} : {actual_caption})"
+
         assert (expected_id in actual_id), \
-            f"Expected result:{expected_id} \t Actual result:{actual_id}"
+            f"{ErrorEnums.TEXT_NOT_EQUAL.value} ({expected_id} : {actual_id})"
