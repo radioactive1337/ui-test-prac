@@ -13,5 +13,5 @@ class Test:
     def test_1(self, driver, tdata, caption, tid):
         page = DynamicTablePage(driver=driver, url=URL)
         page.open()
-        assert page.get_title() == "Table HTML Tag - JavaScript Created"
+        page.assert_page_title("Table HTML Tag - JavaScript Created")
         page.check_table_content(input_table_data=tdata, input_table_caption=caption, input_table_id=tid)

@@ -7,3 +7,4 @@ class ErrorEnums(Enum):
     ATTRIBUTE_NOT_EQUAL = "Expected attribute is not equal to actual"
     ATTRIBUTE_EQUAL = "Expected attribute is equal to actual"
     URL_NOT_EQUAL = "Expected url is not equal to actual"
+    PAGE_TITLE_NOT_EQUAL = "Expected page title is not equal to actual"

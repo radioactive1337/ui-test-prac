@@ -10,7 +10,7 @@ class Test:
     def test_1(self, driver):
         page = ExamplePage(driver=driver, url=URL)
         page.open()
-        assert page.get_title() == "Example Page Title", "Error in page title"
+        page.assert_page_title("Example Page Title")
         page.check_paragraphs_text()
         page.check_list_items()
         page.check_link_button()

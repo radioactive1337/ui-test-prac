@@ -117,3 +117,9 @@ class BasePage:
     @allure.step("Screenshot")
     def take_screenshot(self, file_name):
         return self.driver.save_screenshot(file_name)
+
+    @allure.step("Verifying page title")
+    def assert_page_title(self, expected_page_title: str):
+        actual_page_title = self.get_title()
+        assert expected_page_title == actual_page_title, \
+            f"{ErrorEnums.PAGE_TITLE_NOT_EQUAL.value} ({expected_page_title} : {actual_page_title})"
