@@ -12,6 +12,7 @@ UI framework for the practice of modules such as selenium, allure and other tool
 | locators | storage of locators |
 | pages    | page_objects for UI |
 | tests    | UI tests            |
+| enums    | constants           |
 | tools    | smth helpful        |
 
 ## Installation
