@@ -1,3 +1,4 @@
+import allure
 import pytest
 import json
 from selenium import webdriver
@@ -23,6 +24,7 @@ def pytest_addoption(parser):
 
 
 @pytest.fixture(scope="class")
+@allure.title("Prepare for the test")
 def driver(request):
     driver_name = request.config.getoption("driver")
     headless = request.config.getoption("headless")
