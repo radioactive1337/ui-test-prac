@@ -3,7 +3,7 @@
 ## Description
 
 UI framework for the practice of modules such as selenium, allure and other tools \
-[Example of the allure report is shown here](https://radioactive1337.github.io/ui-test-prac/)
+[Example of the allure report is shown here](https://radioactive1337.github.io/ui-test-practice/)
 
 ## Project structure
 
