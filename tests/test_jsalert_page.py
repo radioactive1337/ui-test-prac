@@ -1,5 +1,4 @@
 import allure
-import pytest
 from pages.JsAlertPage import JsAlertsPage
 
 URL = "https://testpages.eviltester.com/styled/alerts/alert-test.html"
