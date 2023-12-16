@@ -1,9 +1,9 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&random=false&width=435&lines=ui-test-prac)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&random=false&width=435&lines=ui-test-practice)](https://git.io/typing-svg)
 
 ## Description
 
 UI framework for the practice of modules such as selenium, allure and other tools \
-[Example of the allure report is shown here](https://radioactive1337.github.io/ui-test-prac/)
+[Example of the allure report is shown here](https://radioactive1337.github.io/ui-test-practice/)
 
 ## Project structure
 
